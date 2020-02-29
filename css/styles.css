@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    display: inline-block;
+}
+.navbar{
+    background: rgba(224, 219, 219, 0.3);
+}
+.videobackground{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.caption{
+    position: absolute;
+    top: 65%;
+    color: white;
+    padding-left: 2rem;
+}
+.caption h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-shadow: .1rem .1rem .8rem black;
+}
