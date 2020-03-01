@@ -8,6 +8,10 @@ body{
     color: black;
     overflow-x: hidden;
 }
+.navbar{
+    z-index: 3;
+    background: rgba(0,0,0,0.3);
+}
 .v-header{
     height: 100vh;
     display: flex;
@@ -64,4 +68,7 @@ body{
         padding-right: 3rem;
         padding-left: 3rem;
     }
+}
+.toppings{
+    background-image: ;
 }
