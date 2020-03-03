@@ -128,5 +128,18 @@ nav ul li {
     margin: 6rem;
 }
 h3{
-    font-size: 15px;
+    font-size: 17px;
+}
+#noOfPizzas{
+    width: 12rem;
+}
+#size, #crust{
+    background:orange;
+    color: white;
+    width: 10rem;
+    height: 2rem;
+}
+#locationbtn {
+    background:orange;
+    color: white;
 }
