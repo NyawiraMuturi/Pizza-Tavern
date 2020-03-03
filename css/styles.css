@@ -119,7 +119,14 @@ nav ul li {
     padding-right: 4rem;
 }
 .container1{
+    background-image: url(../img/toUse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 0.8;
     padding: 4rem;
     border: solid black;
     margin: 6rem;
+}
+h3{
+    font-size: 15px;
 }
