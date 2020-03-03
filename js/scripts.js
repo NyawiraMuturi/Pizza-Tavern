@@ -8,9 +8,9 @@ var topping1="",topping2="",topping3="",topping4="",topping5="",topping6="";
 var delivery;
 var orderLocation
 
-//business logic constructors, prototype, and functions.
+//business logic
 
-//pizza constructor
+//for pizza
 function Pizza(size,crust,number,delivery,orderLocation,topping1,topping2,topping3,topping4,topping5,topping6){
     this.size=size;
     this.crust=crust;
@@ -25,7 +25,6 @@ function Pizza(size,crust,number,delivery,orderLocation,topping1,topping2,toppin
     this.topping6=topping6;
 }
 
-//prototype to display receipt
 Pizza.prototype.order=function(){
     return ("Number of pizzas: "+this.number+"\n \n"
     +"Pizza size: "+this.size+" = "+sizeTotal+"\n\n"
@@ -35,8 +34,8 @@ Pizza.prototype.order=function(){
     +"Delivery: "+this.delivery+" = "+deliveryTotal);
 }
 
-// selecting size function
-function sizeCheckout(size,number){
+// size selections
+function pizzaSize(size,number){
     switch (size){
         case ("Small"):
             sizeTotal=sizeTotal+200;
@@ -54,8 +53,8 @@ function sizeCheckout(size,number){
     
 }
 
-//crust selector function
-function crustCheckout(crust,number){
+//crust
+function pizzaCrust(crust,number){
     switch (crust){
         case ("Crispy"):
             crustTotal=crustTotal+150;
@@ -74,7 +73,7 @@ function crustCheckout(crust,number){
     crustTotal=crustTotal*number
 }
 
-//toppings selector function
+//toppings
 function toppingsCheckout(size,topping1,topping2,topping3,topping4,topping5,topping6,number){
         if (size==="Small"){
         if(topping1==="Bacon"){
