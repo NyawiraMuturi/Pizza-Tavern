@@ -139,7 +139,10 @@ h3{
     width: 10rem;
     height: 2rem;
 }
-#locationbtn {
+#locationbtn, #total, #orderbtn {
     background:orange;
     color: white;
+}
+#location{
+    width: 15rem;
 }
