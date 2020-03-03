@@ -66,7 +66,7 @@ function crustCheckout(crust,number){
             crustTotal=crustTotal+200;
             break;
         case ("Gluten Free Stuffed"):
-            crustTotal=crustTotal+110;
+            crustTotal=crustTotal+70;
             break;        
     }
 
@@ -77,10 +77,10 @@ function crustCheckout(crust,number){
 function toppingsCheckout(size,topping1,topping2,topping3,topping4,topping5,topping6,number){
         if (size==="Small"){
         if(topping1==="Bacon"){
-            toppingsTotal=toppingsTotal+140;
+            toppingsTotal=toppingsTotal+100;
         }
         if(topping2==="Extra Cheese"){
-            toppingsTotal=toppingsTotal+140;
+            toppingsTotal=toppingsTotal+200;
         }
         if(topping3==="Cheese and Onions"){
             toppingsTotal=toppingsTotal+150;
@@ -103,7 +103,7 @@ function toppingsCheckout(size,topping1,topping2,topping3,topping4,topping5,topp
             toppingsTotal=toppingsTotal+160;
         }
         if(topping3==="Cheese and Onion"){
-            toppingsTotal=toppingsTotal+200;
+            toppingsTotal=toppingsTotal+300;
         }
         if(topping4==="Mushrooms"){
             toppingsTotal=toppingsTotal+200;
@@ -123,7 +123,7 @@ function toppingsCheckout(size,topping1,topping2,topping3,topping4,topping5,topp
             toppingsTotal=toppingsTotal+310;
         }
         if(topping3==="Cheese and Onions"){
-            toppingsTotal=toppingsTotal+290;
+            toppingsTotal=toppingsTotal+400;
         }
         if(topping4==="Mushroom"){
             toppingsTotal=toppingsTotal+240;
@@ -243,7 +243,7 @@ $(document).ready(function(){
         }
         
     });
-    //form section input output
+    //form final
     
     $("form#myForm").submit(function(event){
         event.preventDefault();
