@@ -35,7 +35,7 @@ Pizza.prototype.order=function(){
 }
 
 // size selections
-function pizzaSize(size,number){
+function sizeCheckout(size,number){
     switch (size){
         case ("Small"):
             sizeTotal=sizeTotal+200;
@@ -54,7 +54,7 @@ function pizzaSize(size,number){
 }
 
 //crust
-function pizzaCrust(crust,number){
+function crustCheckout(crust,number){
     switch (crust){
         case ("Crispy"):
             crustTotal=crustTotal+150;
@@ -176,11 +176,11 @@ $(document).ready(function(){
     $('#locationbtn').click(function() {
         orderLocation=$("#location").val();
         if (delivery==="Deliver to my location"){
-            alert(" Your pizza shall be delivered to "+orderLocation+ " after completing you order"); 
+            alert(" We shall deliver your pizza to "+orderLocation+ "."); 
         }
         
     });
-    //checkbox for toppings selection radiiobuttons 
+    //radio buttons
     $("#topping1").click(function(){
         if($(this).prop("checked") == true){
             topping1=this.value;
