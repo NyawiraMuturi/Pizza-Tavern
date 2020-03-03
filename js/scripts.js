@@ -38,13 +38,13 @@ Pizza.prototype.order=function(){
 function sizeCheckout(size,number){
     switch (size){
         case ("Small"):
-            sizeTotal=sizeTotal+200;
+            sizeTotal=sizeTotal+150;
             break;
         case ("Medium"):
-            sizeTotal=sizeTotal+400;
+            sizeTotal=sizeTotal+200;
             break;
         case ("Large"):
-            sizeTotal=sizeTotal+600;
+            sizeTotal=sizeTotal+300;
             break;
     }
     
@@ -57,13 +57,13 @@ function sizeCheckout(size,number){
 function crustCheckout(crust,number){
     switch (crust){
         case ("Crispy"):
-            crustTotal=crustTotal+150;
+            crustTotal=crustTotal+100;
             break;
         case ("Stuffed"):
-            crustTotal=crustTotal+200;
+            crustTotal=crustTotal+150;
             break;
         case ("Gluten Free Crispy"):
-            crustTotal=crustTotal+190;
+            crustTotal=crustTotal+200;
             break;
         case ("Gluten Free Stuffed"):
             crustTotal=crustTotal+110;
@@ -164,7 +164,7 @@ $(document).ready(function(){
     //delivery 
     $("#delivery").click(function(){
         $(".hide-delivery").show();
-        alert("Delivery to all locations includes an extra charge of Ksh100");
+        alert("Delivery within environs costs Ksh:200 extra.");
         delivery=this.value;
     });
     $("#pickUp").click(function(){
