@@ -147,3 +147,15 @@ h4{
     color: orange;
     font-size: 15px;
 }
+.img1{
+    position: relative;
+}
+.add-cart{
+    position: absolute;
+    width: 200;
+    background-color: orange;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
